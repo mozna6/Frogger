@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/icon.png" />
+    <title>Frogger</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link href="http://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet" />
+
+    <script src="./js_files/setup.js" defer></script>
+    <script src="./js_files/model/pages.js" defer></script>
+    <script src="./js_files/model/scoreModel.js" defer></script>
+    <script src="./js_files/model/observer.js" defer></script>
+    <script src="./js_files/model/frogger.js" defer></script>
+    <script src="./js_files/model/obstacles.js" defer></script>
+    <script src="./js_files/model/sound.js" defer></script>
+    <script src="./js_files/main/main.js" defer></script>
+    <script src="./js_files/controller/key.js" defer></script>
+    <script src="./js_files/utility/utilities.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img src="./img/logo.png" alt="logo" id="logo" />
+      <div class="menu">
+        <button
+          type="button"
+          class="button starter"
+          id="startGame"
+          onclick="startGame() "
+        >
+          Start
+        </button>
+        <button type="button" class="button" id="settings" onclick="setting()">
+          Sound
+        </button>
+        <button type="button" class="button" id="control" onclick="controls()">
+          Controls
+        </button>
+        <button
+          type="button"
+          class="button"
+          id="challenge"
+          onclick="startChallenge()"
+        >
+          Challenge
+        </button>
+      </div>
+      <img src="./img/frogger.png" alt="frog" id="frog" />
+
+      <div class="control" hidden>
+        <h2>Ovladanie</h2>
+        <p id="pFirst">
+          &emsp;sipka
+          ↑&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; pohyb
+          vpred<br /><br />
+          &emsp;sipka
+          ↓&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; pohyb
+          vzad<br /><br />
+          &emsp;sipka →&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          pohyb vpravo<br /><br />
+          &emsp;sipka
+          ←&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;pohyb
+          vlavo<br /><br />
+        </p>
+        <h2 id="goal">Ciel hry</h2>
+        <p id="pSecond">
+          Frogger je klasická arkádová hra. Hlavnou úlohou hry je dostať žabu do
+          jej domu. Hráč musí navigovať žabu cez rušnú cestu plnú premávajúcich
+          sa áut, za ktorou ho hneď čaká rieka plná nebezpečných prekážok .
+          Každá úroveň hry má časový limit, takže hráč musí konať rýchlo,
+          predtým ako mu vyprší čas. Hráč dokončí úroveň úspešne vtedy, ak sa mu
+          podarí dopraviť žabu do domceka pred uplynutím času alebo minutím
+          všetkých životov.
+        </p>
+        <button type="button" id="controlButton" onclick="controlsMenu()">
+          Menu
+        </button>
+      </div>
+
+      <div class="settings" hidden>
+        <h2>Nastavenia zvuku</h2>
+        <h3 id="hMusic">Hudba :</h3>
+        <div class="musicWrap">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            id="musicSlider"
+            class="slider"
+          />
+          <p id="musicText"></p>
+        </div>
+        <h3 id="hSound">Zvukove efekty :</h3>
+        <div class="soundWrap">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            id="soundSlider"
+            class="slider"
+          />
+          <p id="soundText"></p>
+        </div>
+
+        <button type="button" id="settingsButton" onclick="settingMenu()">
+          Menu
+        </button>
+      </div>
+
+      <div class="canvas" hidden>
+        <p id="text">Score :</p>
+        <p id="score">0</p>
+        <p id="text2">High score :</p>
+        <p id="highscore">0</p>
+        <p id="text3">Time :</p>
+        <p id="timer">45</p>
+        <canvas id="canvas1"></canvas>
+        <canvas id="canvas2"></canvas>
+        <canvas id="canvas3"></canvas>
+        <canvas id="canvas4"></canvas>
+        <canvas id="canvas5"></canvas>
+      </div>
+
+      <div class="background" hidden></div>
+
+      <div class="container" id="container" hidden>
+        <div class="gameOver">
+          <p>Game over!</p>
+          <button
+            type="button"
+            class="button starter"
+            id="again"
+            onclick="againButton()"
+          >
+            Again
+          </button>
+          <button type="button" class="button" id="menu" onclick="menuButton()">
+            Menu
+          </button>
+        </div>
+
+        <div class="pause" hidden>
+          <p>Pause!</p>
+          <button
+            type="button"
+            class="button starter"
+            id="continue"
+            onclick="continueButton()"
+          >
+            Continue
+          </button>
+          <button type="button" class="button" id="menuu" onclick="menuButton()">
+            Menu
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

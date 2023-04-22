@@ -1,0 +1,372 @@
+body{
+        background: url('../img/bckg.jpg');
+        background-repeat: no-repeat;
+        height:100%;
+        width: 100%;
+        /* font-family: 'Common Pixel', sans-serif; */
+}
+.wrapper{
+        top: 50%;
+        left: 50%; 
+        position: absolute;
+        border: 10px solid rgb(16, 0, 54);
+        width:672px;
+        height:744px;
+        transform: translate(-50%,-50%);
+        background-color: #30396b;
+}
+#logo{
+        width:50%;
+        position: absolute;
+        left:150px;
+        top:15px;;
+        transform:rotate(25deg)
+}
+
+#frog{
+        width:36%;
+        position: absolute;
+        left:20px;
+        top:530px;
+       
+
+}
+.menu{  
+        margin:0;
+        position: absolute;
+        width: 50%;
+        height: 80%;
+        left: 25%;
+        top: 20%;
+        padding: 0;
+        
+        
+}
+.menu button {
+        font-weight: bold;
+        font-size: 23px;
+        background-color: #040d42;
+        color: white;
+        margin-top:50px;
+        padding: 10px 24px;
+        cursor: pointer;
+        width: 100%;
+        height: 13%;
+        display: block;
+        font-family: 'Common Pixel',sans-serif;
+        box-shadow: -3px 3px rgb(118, 110, 138), -2px 2px rgb(118, 110, 138), -1px 1px rgb(118, 110, 138);
+        border: 1px solid rgb(118, 110, 138);
+        
+}
+.menu button:hover{
+        background-color: rgb(52, 52, 54);
+}
+canvas{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+#canvas4 {
+        position: absolute;
+        top:40%;
+        border: 10px solid rgb(16, 0, 54);
+        border-bottom: none;
+}
+.canvas p{
+        position: absolute;
+        top:-100px;
+        left:20px;
+        font-size: 40px;
+        color: white;
+        font-family: 'Common Pixel', sans-serif;
+}
+#score{
+        position: absolute;
+        left: 200px;
+}
+#text2{
+        left:320px;
+}
+#highscore{
+        left:615px;
+}
+#text3{
+        left:450px;
+}
+#timer{
+        left:580px;
+}
+.background{
+        background-color:rgb(34, 34, 51);
+        opacity: 0.5;
+        margin:0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        
+}
+.container{ 
+        margin:0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+}
+.gameOver{
+        position: absolute;
+        width: 600px;
+        height: 150px;
+        top:35%;
+        padding: 0;
+        left:5%;
+        border: #040d42 solid 5px;
+        background-color: #30396b;
+}
+.gameOver button {
+        font-weight: bold;
+        font-size: 20px;
+        background-color: #040d42;
+        color: white;
+        margin-left: 35px;
+        margin-top: 55px;
+        padding: 10px 24px;
+        cursor: pointer;
+        width: 40%;
+        height: 55%;
+        display: inline-block;
+        font-family: 'Common Pixel',sans-serif;
+        box-shadow: -3px 3px rgb(118, 110, 138), -2px 2px rgb(118, 110, 138), -1px 1px rgb(118, 110, 138);
+        border: 1px solid rgb(118, 110, 138);
+
+}
+
+.gameOver button:hover {
+        background-color: rgb(52, 52, 54);
+}
+.gameOver p{
+        font-family: 'Common Pixel',sans-serif;
+        position: absolute;
+        font-weight: bold;
+        margin:0px;
+        font-size:20px;
+        top:15px;
+        color: white;
+        left:41%;
+}
+.pause {
+        position: absolute;
+        width: 600px;
+        height: 150px;
+        top: 35%;
+        padding: 0;
+        left: 5%;
+        border: #040d42 solid 5px;
+        background-color: #30396b;
+}
+
+.pause button {
+        font-weight: bold;
+        font-size: 20px;
+        background-color: #040d42;
+        color: white;
+        margin-left: 35px;
+        margin-top: 55px;
+        padding: 10px 24px;
+        cursor: pointer;
+        width: 40%;
+        height: 55%;
+        display: inline-block;
+        font-family: 'Common Pixel', sans-serif;
+        box-shadow: -3px 3px rgb(118, 110, 138), -2px 2px rgb(118, 110, 138), -1px 1px rgb(118, 110, 138);
+        border: 1px solid rgb(118, 110, 138);
+        
+
+}
+
+.pause button:hover {
+        background-color: rgb(52, 52, 54);
+}
+
+.pause p {
+        font-family: 'Common Pixel', sans-serif;
+        position: absolute;
+        font-weight: bold;
+        margin: 0px;
+        font-size: 20px;
+        top: 15px;
+        color: white;
+        left: 41%;
+}
+#menu{
+        margin-left: 40px;
+}
+#menuu{
+        margin-left: 40px;
+}
+
+.control{
+        font-family: 'Common Pixel',sans-serif;
+        margin:0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        color: white;
+        background-color: #30396b;
+        
+}
+
+.control h2{
+        position: absolute;
+        left:36%;
+        font-size: 30px;
+}
+#pFirst{
+        font-size: 25px;
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        width: 90%;
+        text-align: justify;
+}
+#pSecond{
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        width: 90%;
+        text-align: justify;
+}
+#goal{
+        top: 40%;
+}
+.control button {
+        position: absolute;
+        left:32%;
+        top: 90%;
+        width:34%;
+        font-weight: bold;
+        font-size: 25px;
+        background-color: #040d42;
+        color: white;
+        padding: 10px 24px;
+        cursor: pointer;
+        font-family: 'Common Pixel',sans-serif;
+        box-shadow: -3px 3px rgb(118, 110, 138), -2px 2px rgb(118, 110, 138), -1px 1px rgb(118, 110, 138);
+        border: 1px solid rgb(118, 110, 138);
+}
+
+.control button:hover {
+        background-color: rgb(52, 52, 54);
+}
+
+.settings {
+        font-family: 'Common Pixel', sans-serif;
+        margin: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        color: white;
+        background-color: #30396b;
+
+}
+
+.settings h2 {
+        position: absolute;
+        left: 26%;
+        font-size: 30px;
+}
+
+#settingsButton {
+        position: absolute;
+        left: 32%;
+        top: 90%;
+        width: 34%;
+        font-weight: bold;
+        font-size: 25px;
+        background-color: #040d42;
+        color: white;
+        padding: 10px 24px;
+        cursor: pointer;
+        font-family: 'Common Pixel', sans-serif;
+        box-shadow: -3px 3px rgb(118, 110, 138), -2px 2px rgb(118, 110, 138), -1px 1px rgb(118, 110, 138);
+        border: 1px solid rgb(118, 110, 138);
+}
+
+#settingsButton:hover {
+        background-color: rgb(52, 52, 54);
+}
+.settings h3{
+        position: absolute;
+        top:15%;
+        font-size: 28px;
+        left:5%;
+}
+#hSound{
+        top:50%;
+}
+.musicWrap{
+        width:100%;
+        position: absolute;
+        top: 26%;
+        left: 10%;
+       
+}
+#musicSlider {
+        position: absolute;
+        top:50px;
+}
+.slider{
+        -webkit-appearance: none;
+        width :60%;
+        height: 30px;
+        background: linear-gradient(90deg, rgb(118, 110, 138) 50%, rgb(118, 110, 138)50%);
+        outline: black;
+        border:none;
+        opacity: 0.7;
+        -webkit-transition: 0.2s;
+        transition: opacity 0.2s;
+        border-radius: 3px;
+}
+.slider:hover{
+        opacity:1;
+}
+.slider::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        appearance:none;
+        width: 20px;
+        height: 40px;
+        background: white;
+        border-radius: 3px;
+}
+#musicText{
+        position: absolute;
+        font-size: 35px;
+        left:450px;
+        top:13px;
+
+}
+
+.soundWrap {
+        width: 100%;
+        position: absolute;
+        top: 62%;
+        left: 10%;
+
+}
+
+#soundSlider {
+        position: absolute;
+        top: 50px;
+}
+#soundText {
+        position: absolute;
+        font-size: 35px;
+        left: 450px;
+        top: 13px;
+
+}
+
