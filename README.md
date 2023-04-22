@@ -27,7 +27,7 @@ In this mode, you have to score the most points in a limited amount of time.
 
 ### Code
 - The core game mechanics were adapted from the classic arcade game Frogger.
-- Frank's laboratory YouTube channel, where I learned about the classic arcade game Frogger and used some of the code and concepts to build my own version.
+- The tutorial from Frank's laboratory YouTube channel was used as a reference for creating the game in JavaScript.  
 - Mozilla Developer Network (MDN) Web Docs, which provided helpful references and examples for working with JavaScript and HTML.
 
 ### Images
